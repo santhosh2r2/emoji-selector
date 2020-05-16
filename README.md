@@ -1,6 +1,6 @@
 To start the web program
 
-´´´bash
+```bash
 npm run dev
-´´´
+```
 
