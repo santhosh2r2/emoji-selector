@@ -9,6 +9,7 @@
   export let maxFontSizeRem = 32;
 
   $: fontSizeRem = fontSize;
+  $: themeNone = selectedTheme === 0;
 
   $: content = () => {
     let emoji = emojis[id];
@@ -50,8 +51,27 @@
     border: 1px solid black;
     margin: auto;
   }
+  .emoji-content {
+    font-size: 2rem;
+    color: purple;
+  }
 </style>
 
+<div>
+  <!-- <p>Emoji Hex: {emojis[id].Hex}</p>
+  <p>Emoji HTML: &#{emojis[id].Dec};</p>
+  <br />
+  <p>Theme Hex: {themes[selectedTheme].Hex}</p>
+  <p>Theme HTML: &#{themes[selectedTheme].Dec};</p>
+  <br /> -->
+  <p class="emoji-content">
+    HTML:
+    <strong>&#{emojis[id].Dec};</strong>
+    {#if !themeNone}
+      <strong>&#{themes[selectedTheme].Dec};</strong>
+    {/if}
+  </p>
+</div>
 <div class="preview">
   <button class="btn btn-primary" on:click={handleClick}>
     Download as PNG
