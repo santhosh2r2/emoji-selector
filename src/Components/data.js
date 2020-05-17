@@ -1,5 +1,41 @@
 ﻿module.exports.data = {
+  // let emoji = document.getElementById("try");
+  //emoji.innerText = String.fromCodePoint(0x261D)+String.fromCodePoint(0x1F3FF);
+
+  themes: [
+    {
+      Name: "None",
+      Dec: "",
+      Hex: "",
+    },
+    {
+      Name: "Dark",
+      Dec: "127999",
+      Hex: "1F3FF",
+    },
+    {
+      Name: "Medium Dark",
+      Dec: "127998",
+      Hex: "1F3FE",
+    },
+    {
+      Name: "Medium",
+      Dec: "127997",
+      Hex: "1F3FD",
+    },
+    {
+      Name: "Medium Light",
+      Dec: "127996",
+      Hex: "1F3FB",
+    },
+    {
+      Name: "Light",
+      Dec: "127995",
+      Hex: "1F3FC",
+    },
+  ],
   //https://www.w3schools.com/charsets/ref_emoji.asp
+
   emojis: [
     {
       Pic: "⌚",

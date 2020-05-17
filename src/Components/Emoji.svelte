@@ -1,4 +1,8 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
+
   export let hexValue;
   export let id;
   export let selectedId;
@@ -7,13 +11,18 @@
   function handleClick() {
     selected = !selected;
     selectedId = id;
+    if (selected) {
+      dispatch("message", {
+        id: selectedId
+      });
+    }
   }
 </script>
 
 <style>
   .emoji {
     display: inline-block;
-    padding: 0 0.2rem;
+    padding: 0.2rem;
     font-size: 1rem;
   }
   .selected {
