@@ -5,14 +5,14 @@ Download the emoji to PNG format.
 Source for Emojis: https://www.w3schools.com/charsets/ref_emoji.asp
 
 ## Technologies used
-1. Svelte 3
-2. Bootstrap 4.3.1
-3. Fontawesome 5.13.0
+* Svelte 3
+* Bootstrap 4.3.1
+* Fontawesome 5.13.0
 
 ## Pre-requisites
 
-1. Git 2.25 or above
-2. NodeJs 12.16 or above
+* Git 2.25 or above
+* NodeJs 12.16 or above
 
 ## Installation
 
@@ -25,7 +25,14 @@ npm install
 npm run dev
 ```
 
-use "Download as PNG" to export the emoji.
+## Usage
+* select an emoji
+* select Theme (applicable only for emojis with skin tones)
+* select font size using silder (max. 48rem = 768px)
+* use "Download as PNG" to export the emoji.
+
+`emojis with skin tones can be found under`
+https://www.w3schools.com/charsets/ref_emoji_skin_tones.asp
 
 ## Screenshots
 

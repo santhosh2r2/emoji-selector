@@ -44,6 +44,8 @@
     width: 48rem;
     height: 48rem;
     text-align: center;
+    display: block;
+    overflow: auto;
   }
   .canvas-hide {
     display: none;
@@ -72,11 +74,9 @@
     {/if}
   </p>
 </div>
+<button class="btn btn-primary" on:click={handleClick}>Download as PNG</button>
 <div class="preview">
-  <button class="btn btn-primary" on:click={handleClick}>
-    Download as PNG
-  </button>
-  <p style="font-size: {fontSizeRem}rem;">{content()}</p>
+  <p style="font-size: {fontSizeRem}rem;" class="emoji-preview">{content()}</p>
   <canvas
     class="canvas-hide"
     width="{maxFontSizeRem * 16 * 2}px"
